@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Dark Mode Toggle </title>
+</head>
+
+<!-- INLINE STYLING -->
+<style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+      margin-left: 3em;
+      margin-right: 3em;
+}
+.dark-mode {
+      background-color: rgb(0, 0, 0);
+      color: white;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    color: chartreuse;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 5px 20px;
+    display: inline-block;
+    text-align: center;
+    /* margin: 6px; */
+}
+
+.row{ margin-top: 2em;}
+
+select {
+    margin-left: 3px;
+    font-size: 13px;
+    width: 30%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+optgroup{color: chartreuse;}
+
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>The Data Science StreamRs Calendar!</h1>
+        <p>In the last few years, we have seen an huge uptick in the number of data science 
+            professionals and hobbyists who like to stream their projects and share their 
+            knowledge with the community! This calendar is my small attempt to contribute 
+            back to this awesome community so you can see what great streams are happening!
+        </p>
+    </div>
+    
+
+    <p>Click the button to toggle between dark and light mode for this page.</p>
+    <button onclick="myFunction()">dark mode</button>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+<script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
